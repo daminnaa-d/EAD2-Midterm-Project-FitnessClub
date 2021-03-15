@@ -23,14 +23,12 @@ public class ServletFilter implements Filter {
 
 
         String permission = config.getInitParameter("permission");
-        String email = req.getParameter("email");
-        String pswd = req.getParameter("pswd");
-
 
         if(permission.equalsIgnoreCase("true")){
+            out.println("You have a permission! <br>");
             chain.doFilter(req, resp);
         }else{
-            out.println("Invalid Data!");
+            out.println("You do not have a permission! <br>");
         }
         out.close();
     }

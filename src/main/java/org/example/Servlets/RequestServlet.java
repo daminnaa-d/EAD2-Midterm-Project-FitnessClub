@@ -30,6 +30,7 @@ public class RequestServlet extends HttpServlet {
         long phoneNumber = Long.parseLong(req.getParameter("phoneNumber"));
         String question = req.getParameter("question");
 
+
         HttpSession session = req.getSession();
         if (session.getAttribute("name") != null) {
             for (Account account : FitnessClub.getFitnessClub().getAccounts()) {

@@ -21,5 +21,7 @@ public class LogoutServlet extends HttpServlet {
         response.addCookie(ck);
 
         out.print("You are successfully logged out!");
+
+        out.close();
     }
 }
