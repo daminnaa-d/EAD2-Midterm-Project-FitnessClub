@@ -11,8 +11,8 @@
     <title>Request Form</title>
 </head>
 <body>
+<%@ include file="link.jsp" %>
 
-<a href="index.jsp">Home</a>
 <form action="request" method="post">
 <div class="container">
     <h2>Request Form</h2>

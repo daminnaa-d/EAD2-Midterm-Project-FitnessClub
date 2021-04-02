@@ -26,7 +26,7 @@
             </div>
         </li>
         <li><a href="request.jsp">Leave request</a></li>
-        <li><a href="profile">Profile</a></li>
+        <li><a href="profile.jsp">Profile</a></li>
         <li><a href="login.jsp">Login</a></li>
         <li><a href="LogoutServlet">Logout</a></li>
     </ul>

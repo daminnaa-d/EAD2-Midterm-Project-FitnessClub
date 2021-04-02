@@ -6,7 +6,7 @@ public class FitnessClub {
     private static FitnessClub fitnessClub;
     private ArrayList<Account> accounts = new ArrayList<>();
     private ArrayList<Schedule> schedules = new ArrayList<>();
-    private FitnessClub(){};git
+    private FitnessClub(){};
 
     public static FitnessClub getFitnessClub() {
         if (fitnessClub == null) {

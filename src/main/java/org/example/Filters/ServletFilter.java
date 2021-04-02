@@ -1,7 +1,5 @@
 package org.example.Filters;
 
-import org.example.model.Account;
-import org.example.model.FitnessClub;
 
 import java.io.IOException;
 import java.io.PrintWriter;

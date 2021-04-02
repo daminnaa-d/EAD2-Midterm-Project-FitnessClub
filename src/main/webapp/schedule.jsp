@@ -1,7 +1,7 @@
 <%@ page import="org.example.model.FitnessClub" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="org.example.model.Schedule" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,7 +10,8 @@
     <title>Schedule</title>
 </head>
 <body>
-<h2><a href="index.jsp">Home</a></h2>
+<%@ include file="link.jsp" %>
+
 <div class="container">
     <h2>Schedule</h2>
     <table>

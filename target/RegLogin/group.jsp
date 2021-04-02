@@ -1,5 +1,3 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,6 +6,7 @@
     <title>Group Programs</title>
 </head>
 <body>
+
 <div class="image">
     <div class = "text">
         <h1>GROUP PROGRAMS</h1>

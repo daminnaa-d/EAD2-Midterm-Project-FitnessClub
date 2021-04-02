@@ -20,7 +20,6 @@
     <title>Register</title>
 </head>
 <body>
-<a href="index.jsp" >Home</a>
 
 <form action="registration" method="GET">
     <div class="container">
