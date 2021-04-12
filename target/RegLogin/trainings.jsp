@@ -1,4 +1,4 @@
-<%@ page import="org.example.model.*" %>
+<%@ page import="org.example.entity.*" %>
 <link href="resources/header.css" rel="stylesheet">
 
 <html>

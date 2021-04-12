@@ -1,4 +1,4 @@
-<%@ page import="org.example.model.Account" %>
+<%@ page import="org.example.entity.Account" %>
 <%@ page import="java.io.PrintWriter"%>
 <%@page import="java.util.*" %>
 
@@ -20,7 +20,7 @@
     <title>Register</title>
 </head>
 <body>
-
+<a href="index.jsp">Home</a>
 <form action="registration" method="GET">
     <div class="container">
     <h2>Registration</h2>

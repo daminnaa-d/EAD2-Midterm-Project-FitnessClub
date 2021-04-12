@@ -1,9 +1,8 @@
 package org.example.Servlets;
 
-import org.example.model.Account;
-import org.example.model.FitnessClub;
-import org.example.model.Request;
-import org.example.model.Schedule;
+import org.example.entity.Account;
+import org.example.entity.FitnessClub;
+import org.example.entity.Schedule;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

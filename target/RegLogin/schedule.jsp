@@ -1,6 +1,6 @@
-<%@ page import="org.example.model.FitnessClub" %>
+<%@ page import="org.example.entity.FitnessClub" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="org.example.model.Schedule" %>
+<%@ page import="org.example.entity.Schedule" %>
 
 <html>
 <head>

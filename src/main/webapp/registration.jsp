@@ -1,4 +1,4 @@
-<%@ page import="org.example.model.Account" %>
+<%@ page import="org.example.entity.Account" %>
 <%@ page import="java.io.PrintWriter"%>
 <%@page import="java.util.*" %>
 

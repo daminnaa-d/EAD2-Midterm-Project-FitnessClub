@@ -13,4 +13,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="10" />
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="FitnessClub" options="-parameters" />
+    </option>
+  </component>
 </project>
