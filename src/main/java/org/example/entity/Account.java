@@ -2,6 +2,7 @@ package org.example.entity;
 
 import java.util.ArrayList;
 
+
 public class Account {
 
     private String firstName;

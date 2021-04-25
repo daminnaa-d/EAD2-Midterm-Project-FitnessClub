@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet(
         name="schedule",
@@ -37,8 +40,6 @@ public class ScheduleServlet extends HttpServlet {
                            account.getSchedules().add(schedule);
                            out.println("You are signed for the " + programme);
                            break;
-                        }else{
-                            out.println("Programme is not found!");
                         }
                     }
                 } else {
@@ -51,6 +52,36 @@ public class ScheduleServlet extends HttpServlet {
         }
 
 
+
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/fitness_db","root","password");
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM schedule;");
+            List<Schedule> schedules = new ArrayList<>();
+            while(resultSet.next()){
+                String programme = resultSet.getString("programme");
+                String times = resultSet.getString("times");
+                double price = resultSet.getDouble("price");
+                String trainer = resultSet.getString("trainer");
+                Schedule schedule = new Schedule(programme, times, price, trainer);
+                schedules.add(schedule);
+
+            }
+            FitnessClub.getFitnessClub().setSchedules(schedules);
+            req.getRequestDispatcher("schedule.jsp").include(req,resp);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
     }
 }

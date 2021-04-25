@@ -4,4 +4,4 @@ programme VARCHAR(30) NOT NULL,
 times VARCHAR(30) NOT NULL,
 price DOUBLE NOT NULL,
 trainer VARCHAR(50)
-)
+);

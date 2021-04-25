@@ -15,7 +15,7 @@
     <title>Login</title>
 </head>
 <body>
-<a href="index.jsp">Home</a>
+<h2><a href="index.jsp">Home</a></h2>
     <form action="login" method="post">
         <div class="container">
             <h2>Login</h2>

@@ -920,5 +920,64 @@ SELECT|sys.sys_config:null
       <ObjectGrants>SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,RELOAD,SHUTDOWN,PROCESS,FILE,REFERENCES,INDEX,ALTER,SHOW DATABASES,SUPER,CREATE TEMPORARY TABLES,LOCK TABLES,EXECUTE,REPLICATION SLAVE,REPLICATION CLIENT,CREATE VIEW,SHOW VIEW,CREATE ROUTINE,ALTER ROUTINE,CREATE USER,EVENT,TRIGGER,CREATE TABLESPACE,CREATE ROLE,DROP ROLE
 </ObjectGrants>
     </user>
+    <table id="287" parent="2" name="flyway_schema_history"/>
+    <column id="288" parent="287" name="installed_rank">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="289" parent="287" name="version">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+    </column>
+    <column id="290" parent="287" name="description">
+      <Position>3</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="291" parent="287" name="type">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="292" parent="287" name="script">
+      <Position>5</Position>
+      <DataType>varchar(1000)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="293" parent="287" name="checksum">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="294" parent="287" name="installed_by">
+      <Position>7</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="295" parent="287" name="installed_on">
+      <Position>8</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="296" parent="287" name="execution_time">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="297" parent="287" name="success">
+      <Position>10</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="298" parent="287" name="flyway_schema_history_s_idx">
+      <ColNames>success</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="299" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>installed_rank</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

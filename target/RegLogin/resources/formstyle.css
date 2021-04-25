@@ -3,6 +3,11 @@
     width: 500px;
     padding: 16px;
     margin: 0 auto;
+    font: 15px 'trebuchet MS', 'lucida sans';
+}
+
+a {
+    text-decoration: none;
 }
 
 .field {
